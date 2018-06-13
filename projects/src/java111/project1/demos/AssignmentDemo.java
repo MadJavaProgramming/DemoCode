@@ -6,12 +6,11 @@
       *  values to them, and then display.
       */
       public static void main(String[] args) {
-          int myNumber = 500.500;
+          int myNumber = 500;
           String myString = "Hello Everyone!";
 
           System.out.println("myNumber is " + myNumber);
           System.out.println("myString is " + myString);
-
       }
 
 
