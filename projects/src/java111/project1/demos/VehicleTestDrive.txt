@@ -1,0 +1,9 @@
+Class Name: VehicleTestDrive
+
+Purpose: Create Vehicle objects and test them by calling the  start method.
+
+Instance variable - no instance variables in test drives.
+
+Methods
+    - main (usually the only method in a test drive)
+    purpose: instantiate 2 vehicle objects and call the start method on each one.
