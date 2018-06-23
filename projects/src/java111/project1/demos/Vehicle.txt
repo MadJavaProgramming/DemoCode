@@ -1,0 +1,11 @@
+Class Name: Vehicle
+
+Instance variable (attributes, data about the thing)
+    - make
+    - model
+    - year
+    - color
+
+Methods
+    - start: display information about the vehicle and a message that
+             tells the user the vehicle has started
