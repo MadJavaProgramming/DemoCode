@@ -1,5 +1,3 @@
-package java111.project2.demos;
-
 /** Create vehicle objects and test them by calling the  start method.
  *
  * @author pwaite
@@ -14,45 +12,30 @@ package java111.project2.demos;
       */
       public static void main(String[] args) {
 
-          // instantiate a vehicle object, and assigning it to the vehicle1 variable
-          Vehicle vehicle1 = new Vehicle();
+          // instantiate an array that will hold 2 Vehicle object references
+          Vehicle[] vehicles = new Vehicle[2];
 
-          // instantiate a second vehicle object, and assigning it to the vehicle2 variable
-          Vehicle vehicle2 = new Vehicle();
+          // instantiate 2 vehicles, one for each index.
+          vehicles[0] = new Vehicle();
+          vehicles[1] = new Vehicle();
 
           // set some details on the first vehicle object
-          vehicle1.make = "Chevy";
-          vehicle1.model = "Blazer";
-          vehicle1.year = 2003;
-          vehicle1.color = "grey";
+          vehicles[0].make = "Chevy";
+          vehicles[0].model = "Blazer";
+          vehicles[0].year = 2003;
+          vehicles[0].color = "grey";
 
           // set some details on the second vehicle object
-          vehicle2.make = "Toyota";
-          vehicle2.model = "4-Runner";
-          vehicle2.year = 2012;
-          vehicle2.color = "black";
+          vehicles[1].make = "Toyota";
+          vehicles[1].model = "4-Runner";
+          vehicles[1].year = 2012;
+          vehicles[1].color = "black";
 
-          // call the start method on vehicle1 and vehicle 2
-          vehicle1.start();
-          vehicle2.start();
+          // call the start method on each vehicle in the array
 
-          vehicle1 = vehicle2;
-
-          System.out.println("After assigning vehicle2 to vehicle 1");
-          vehicle2.start(); // what will the output be?
-          vehicle1.start(); // what will the output be?
-
-          vehicle1.color = "Yellow";
-          System.out.println("After changing vehicle 1 to yellow");
-          vehicle2.start(); // what color is it?
-          vehicle1.start(); // what color is it?
-
-          vehicle1 = null;
-
-          System.out.println("After setting vehicle 1 to null");
-          vehicle2.start(); // does this work?
-          vehicle1.start(); // does this work?
-
+          for (int counter = 0; counter < vehicles.length; counter++) {
+              vehicles[counter].start();
+          }
 
       }
 

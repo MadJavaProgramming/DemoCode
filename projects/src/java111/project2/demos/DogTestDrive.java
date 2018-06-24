@@ -1,5 +1,3 @@
-package java111.project2.demos;
-
 /**
  *  The Dog Test Drive class. Finally, we get to make some objects!
  *

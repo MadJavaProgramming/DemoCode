@@ -1,5 +1,3 @@
-package java111.project2.demos;
-
 /** Represents a vehicle. This will be used
  *  for demo throughout the semester.
  *

@@ -1,5 +1,3 @@
-package java111.project2.demos;
-
 /**
  *  The Dog class which we will use to make our first objects! Woo Hoo!!
  *
