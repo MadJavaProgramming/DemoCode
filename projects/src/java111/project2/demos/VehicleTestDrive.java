@@ -20,16 +20,16 @@
           vehicles[1] = new Vehicle();
 
           // set some details on the first vehicle object
-          vehicles[0].make = "Chevy";
-          vehicles[0].model = "Blazer";
-          vehicles[0].year = 2003;
-          vehicles[0].color = "grey";
+          vehicles[0].setMake("Chevy");
+          vehicles[0].setMake("Blazer");
+          vehicles[0].setYear(2003);
+          vehicles[0].setColor("grey");
 
           // set some details on the second vehicle object
-          vehicles[1].make = "Toyota";
-          vehicles[1].model = "4-Runner";
-          vehicles[1].year = 2012;
-          vehicles[1].color = "black";
+          vehicles[1].setMake("Toyota");
+          vehicles[1].setMake("4-Runner");
+          vehicles[1].setYear(2012);
+          vehicles[1].setColor("black");
 
           // call the start method on each vehicle in the array
 
