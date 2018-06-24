@@ -1,20 +1,28 @@
 /**
- *  The Dog class which we will use to make our first objects! Woo Hoo!!
+ *  This Dog class shows different behavior depending on size.
  *
  *@author    eknapp
  */
 public class Dog {
 
     int     size;
-    String  breed;
     String  name;
-
 
     /**
      *  This method is the code for the bark action
      */
-    void bark() {
-        System.out.println("Ruff! Ruff!");
+    void bark(int numberOfBarks) {
+        int counter = 0;
+        while (counter < numberOfBarks) {
+            if (size > 60) {
+                System.out.println("Wooof! Woooof!");
+            } else if (size > 14) {
+                System.out.println("Ruff! Ruff!");
+            } else {
+                System.out.println("Yip! Yip!");
+            }
+            counter++;
+        }
     }
 
 }

@@ -1,5 +1,5 @@
 /**
- *  The Dog Test Drive class. Finally, we get to make some objects!
+ *  The Dog Test Drive class. We will make 3 objects of different sizes.
  *
  *@author    eknapp
  */
@@ -13,23 +13,17 @@ public class DogTestDrive {
      */
     public static void main(String[] args) {
 
-        // create primitive for comparison
-        int size = 50;
+        Dog one = new Dog();
+        one.size = 70;
 
-        //Create our first object on the next line
-        Dog firstDog  = new Dog();
+        Dog two = new Dog();
+        two.size = 8;
 
-        //Set its size
-        firstDog.size = 40;
+        Dog three = new Dog();
+        three.size = 35;
 
-        //Set its breed
-        firstDog.breed = "poodle";
-
-        //Make it bark
-        firstDog.bark();
-
-
-
+        one.bark(1);
+        two.bark(10);
+        three.bark(3);
     }
-
 }
