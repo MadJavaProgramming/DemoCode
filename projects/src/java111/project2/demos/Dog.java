@@ -8,6 +8,16 @@ public class Dog {
     private int     size;
     private String  name;
 
+    /**
+     *  Gets the size attribute of the Dog object
+     *
+     *@return    The size value
+     */
+    public int getSize() {
+        return size;
+    }
+
+
     /** set the dog's size
      * @param newSize
      */
@@ -21,6 +31,16 @@ public class Dog {
      public String getName() {
          return name;
      }
+
+     /**
+      *  Sets the name attribute of the Dog object
+      *
+      *@param  name  The new name value
+      */
+     public void setName(String inputName) {
+         name = inputName;
+     }
+
     /**
      *  This method is the code for the bark action
      *  @param numberOfBarks number of times the dog should bark
