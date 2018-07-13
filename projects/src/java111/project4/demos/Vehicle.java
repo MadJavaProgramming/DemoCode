@@ -7,7 +7,7 @@
  public class Vehicle {
      // instance variables/attributes
      private String make;
-     private String model;
+     protected String model;
      private int year;
      private String color;
 
@@ -39,6 +39,8 @@
              year = newYear;
          }
 
+
+
      /** Display information about the vehicle and a message that
       *  tells the user the vehicle has started
       */
@@ -46,4 +48,44 @@
           System.out.println("The " + color + " " + year + " " + make + " " + model +
                 " is starting.");
       }
- }
+
+	/**
+	* Returns value of make
+	* @return make of car
+	*/
+	public String getMake() {
+		return make;
+	}
+
+
+
+	/**
+	* Returns value of model
+	* @return model of car
+	*/
+	public String getModel() {
+		return model;
+	}
+
+
+
+	/**
+	* Returns value of year
+	* @return car's year
+	*/
+	public int getYear() {
+		return year;
+	}
+
+
+
+	/**
+	* Returns value of color
+	* @return car's color
+	*/
+	public String getColor() {
+		return color;
+	}
+
+
+}

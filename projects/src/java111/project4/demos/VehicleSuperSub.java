@@ -13,12 +13,14 @@
          car.setModel("Blazer");
          car.setYear(2003);
          car.setColor("red");
+         car.setNumberOfCylinders(8);
 
          Airplane plane = new Airplane();
          plane.setMake("Cirrus");
          plane.setModel("SR22");
          plane.setColor("White with red stripe");
          plane.setYear(2018);
+         plane.setNumberOfEngines(2);
 
          plane.start();
          car.start();
