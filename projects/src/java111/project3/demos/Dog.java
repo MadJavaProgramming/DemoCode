@@ -4,64 +4,12 @@
  * @author    eknapp
  */
 public class Dog {
-
     private  String  name;
     private  String  owner;
-    private  int     weight;
+    private int weight;
 
-    /**
-     *  Sets the name attribute of the Dog object
-     *
-     * @param  name  The new name value
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    /**
-     *  Gets the name attribute of the Dog object
-     *
-     * @return    The name value
-     */
-    public String getName() {
-        return name;
-    }
 
-    /**
-     *  Sets the owner attribute of the Dog object
-     *
-     * @param  owner  The new owner value
-     */
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
-
-    /**
-     *  Gets the owner attribute of the Dog object
-     *
-     * @return    The owner value
-     */
-    public String getOwner() {
-        return owner;
-    }
-
-    /**
-     *  Sets the weight attribute of the Dog object
-     *
-     * @param  weight  The new weight value
-     */
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    /**
-     *  Gets the weight attribute of the Dog object
-     *
-     * @return    The weight value
-     */
-    public int getWeight() {
-        return weight;
-    }
 
     /**
      *  Description of the Method
@@ -87,4 +35,52 @@ public class Dog {
                 + "\nWeight: " + getWeight()
                 + "\nFood Needed: " + calculateFoodNeeded();
     }
+
+	/**
+	* Returns value of name
+	* @return
+	*/
+	public String getName() {
+		return name;
+	}
+
+	/**
+	* Sets new value of name
+	* @param
+	*/
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	* Returns value of owner
+	* @return
+	*/
+	public String getOwner() {
+		return owner;
+	}
+
+	/**
+	* Sets new value of owner
+	* @param
+	*/
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	/**
+	* Returns value of weight
+	* @return
+	*/
+	public int getWeight() {
+		return weight;
+	}
+
+	/**
+	* Sets new value of weight
+	* @param weight Weight of the dog
+	*/
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
 }

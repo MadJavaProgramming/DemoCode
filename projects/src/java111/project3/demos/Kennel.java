@@ -9,9 +9,9 @@ import java.util.*;
  */
 public class Kennel {
 
-    private  InputHelper  input;
-    private  ArrayList<Dog>    dogs;
-    private  int          totalFoodForWeek;
+    private InputHelper input;
+    private ArrayList<Dog> dogs;
+    private int totalFoodForWeek;
 
     /**
      *  Main processing method for the Kennel object
@@ -31,28 +31,24 @@ public class Kennel {
         dogs = new ArrayList<Dog>();
         input = new InputHelper();
 
-        String  name          = "";
-        String  owner         = "";
-        String  weightString  = "";
-        String  more          = "";
-        int     weight        = 0;
-        Dog     newDog        = null;
+        String name = "";
+        String owner = "";
+        String weightString = "";
+        String more = "";
+        int weight = 0;
+        Dog newDog = null;
 
         while (true) {
-            name = input.getUserInput(
-                    "Enter the name of the dog");
-            owner = input.getUserInput(
-                    "Enter the name of the owner");
-            weightString = input.getUserInput(
-                    "Enter the weight of the dog");
+            name = input.getUserInput("Enter the name of the dog");
+            owner = input.getUserInput("Enter the name of the owner");
+            weightString = input.getUserInput("Enter the weight of the dog");
             weight = Integer.parseInt(weightString);
             newDog = new Dog();
             newDog.setName(name);
             newDog.setOwner(owner);
             newDog.setWeight(weight);
             dogs.add(newDog);
-            more = input.getUserInput(
-                    "Would you like to enter another?");
+            more = input.getUserInput("Would you like to enter another?");
             if (!more.equals("y")) {
                 break;
             }
@@ -64,7 +60,7 @@ public class Kennel {
      */
     public void displayDogs() {
 
-        Dog  dog  = null;
+        Dog dog = null;
         for (int i = 0; i < dogs.size(); i++) {
             dog = dogs.get(i);
             System.out.println(dog.display());
@@ -76,7 +72,7 @@ public class Kennel {
      *  Calculate the total Food by Weight
      */
     public void calculateTotalFoodWeight() {
-        Dog  dog  = null;
+        Dog dog = null;
         for (int i = 0; i < dogs.size(); i++) {
             dog = (Dog) dogs.get(i);
             totalFoodForWeek += dog.calculateFoodNeeded() * 7;
@@ -88,8 +84,7 @@ public class Kennel {
      */
     public void displayTotals() {
 
-        System.out.println("Total Food Needed for the Week: "
-                 + totalFoodForWeek + " pounds");
+        System.out.println("Total Food Needed for the Week: " + totalFoodForWeek + " pounds");
 
     }
 }
