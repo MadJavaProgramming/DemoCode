@@ -34,7 +34,7 @@
           // call the start method on each vehicle in the array
 
           for (int counter = 0; counter < vehicles.length; counter++) {
-              vehicles[counter].start();
+              System.out.println(vehicles[counter]);
           }
 
       }

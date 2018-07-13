@@ -22,8 +22,12 @@
          plane.setYear(2018);
          plane.setNumberOfEngines(2);
 
-         plane.start();
-         car.start();
+         //plane.start();
+         //car.start();
+
+         // toString() demo:
+         System.out.println(plane);// implicitly calls toString();
+         System.out.println(car);
      }
 
  }

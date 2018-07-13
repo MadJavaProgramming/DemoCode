@@ -24,8 +24,7 @@ class Car extends Vehicle {
     /** Display information about the car and a message that
      *  tells the user the car has started
      */
-     public void start() {
-         super.start();
-         System.out.println("It has " + numberOfCylinders + " cylinder/s.");
+     public String toString() {
+         return super.toString() + "It has " + numberOfCylinders + " cylinder/s.";
      }
 }

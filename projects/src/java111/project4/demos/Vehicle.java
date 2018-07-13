@@ -41,12 +41,13 @@
 
 
 
-     /** Display information about the vehicle and a message that
+     /**Return information about the vehicle and a message that
       *  tells the user the vehicle has started
+      * @return a string representation of a Vehicle
       */
-      public void start() {
-          System.out.println("The " + color + " " + year + " " + make + " " + model +
-                " is starting.");
+      public String toString() {
+          return super.toString() + ". The " + color + " " + year + " " + make + " " + model +
+            " is starting.";
       }
 
 	/**

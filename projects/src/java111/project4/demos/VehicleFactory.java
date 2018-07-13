@@ -49,13 +49,13 @@ import java.util.*;
          System.out.println("in startAllVehicles");
          for (int counter = 0; counter < listOfVehicles.size(); counter++) {
              Vehicle vehicle = listOfVehicles.get(counter);
-             vehicle.start();
+             System.out.println(vehicle);
              //listOfVehicles.get(counter).start(); // this line is equivalent to lines 51 & 52
          }
          System.out.println();
          System.out.println("Enhanced for loop output follows");
          for (Vehicle vehicle1 : listOfVehicles) {
-             vehicle1.start();
+             System.out.println(vehicle1);
          }
 
      }
