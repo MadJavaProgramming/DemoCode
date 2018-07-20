@@ -16,8 +16,8 @@
           Vehicle[] vehicles = new Vehicle[2];
 
           // instantiate 2 vehicles, one for each index.
-          vehicles[0] = new Vehicle();
-          vehicles[1] = new Vehicle();
+          vehicles[0] = new Car();
+          vehicles[1] = new Car();
 
           // set some details on the first vehicle object
           vehicles[0].setMake("Chevy");

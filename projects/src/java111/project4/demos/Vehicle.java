@@ -4,7 +4,7 @@
  *  @author pwaite
  */
 
- public class Vehicle {
+ public abstract class Vehicle {
      // instance variables/attributes
      private String make;
      protected String model;
@@ -50,6 +50,9 @@
             " is starting.";
       }
 
+    /** Operate defines how the vehicle is "driven" or "controlled"
+     */
+    public abstract void operate();
 	/**
 	* Returns value of make
 	* @return make of car

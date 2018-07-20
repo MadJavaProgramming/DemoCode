@@ -22,14 +22,14 @@ import java.util.*;
          //create a vehicle and assign to the first slot in the array
          //listOfVehicles.add(new Vehicle());
 
-         Vehicle vehicle1 = new Vehicle();
+         Vehicle vehicle1 = new Car();
          vehicle1.setMake("Chevy");
          vehicle1.setMake("Blazer");
          vehicle1.setYear(2003);
          vehicle1.setColor("grey");
          listOfVehicles.add(vehicle1);
 
-         Vehicle vehicle2 = new Vehicle();
+         Vehicle vehicle2 = new Car();
          vehicle2.setMake("Toyota");
          vehicle2.setMake("4 Runner");
          vehicle2.setYear(2012);

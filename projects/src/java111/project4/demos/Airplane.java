@@ -20,4 +20,11 @@ class Airplane extends Vehicle {
 	public void setNumberOfEngines(int numberOfEngines) {
 		this.numberOfEngines = numberOfEngines;
 	}
+
+    /** Fly the plane
+     */
+    public void operate() {
+        System.out.println("Flying the plan...");
+
+    }
 }

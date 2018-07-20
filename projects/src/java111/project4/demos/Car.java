@@ -27,4 +27,11 @@ class Car extends Vehicle {
      public String toString() {
          return super.toString() + "It has " + numberOfCylinders + " cylinder/s.";
      }
+
+     /** Drive the car
+      */
+     public void operate() {
+         System.out.println("Driving the car...");
+
+     }
 }
