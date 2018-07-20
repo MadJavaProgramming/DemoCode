@@ -9,10 +9,10 @@
       */
      public static void main(String[] args) {
          // instantiate a Car
-         Vehicle car = new Car();
+         Car car = new Car();
          car.setMake("Chevy");
          car.setModel("Blazer");
-         //car.setNumberOfCylinders(4);
+         car.setNumberOfCylinders(4);
 
          Vehicle plane = new Airplane();
          plane.setMake("Cirrus");
