@@ -34,4 +34,11 @@ class Car extends Vehicle {
          System.out.println("Driving the car...");
 
      }
+
+     /** determines the cost of maintenance.
+      *  @return maintenance cost
+      */
+      public  double determineMaintenanceCost() {
+          return 250.00 * numberOfCylinders;
+      }
 }

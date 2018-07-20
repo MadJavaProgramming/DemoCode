@@ -42,6 +42,10 @@ import java.util.*;
 
          System.out.println("at the end of the create Vehicles()");
 
+         for (Maintainable item : listOfVehicles) {
+             System.out.println("The cost of maintenance is $" + item.determineMaintenanceCost());
+         }
+
      }
      /** start each vehicle in the list **/
      public void startAllVehicles() {

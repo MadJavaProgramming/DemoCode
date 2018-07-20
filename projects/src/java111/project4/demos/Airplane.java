@@ -27,4 +27,11 @@ class Airplane extends Vehicle {
         System.out.println("Flying the plan...");
 
     }
+
+    /** determines the cost of maintenance.
+     *  @return maintenance cost
+     */
+     public double determineMaintenanceCost() {
+         return 500.00 * numberOfEngines;
+     }
 }

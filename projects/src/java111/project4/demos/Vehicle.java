@@ -4,7 +4,7 @@
  *  @author pwaite
  */
 
- public abstract class Vehicle {
+ public abstract class Vehicle implements Maintainable {
      // instance variables/attributes
      private String make;
      protected String model;
