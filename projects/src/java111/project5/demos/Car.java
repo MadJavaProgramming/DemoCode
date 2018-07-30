@@ -5,6 +5,7 @@ package java111.project5.demos;
  */
 class Car extends Vehicle {
     private int numberOfCylinders;
+<<<<<<< HEAD
 
     /** creates a Car
      */
@@ -36,6 +37,12 @@ class Car extends Vehicle {
 	/**
 	* Returns value of numberOfCylinders
 	* 
+=======
+
+	/**
+	* Returns value of numberOfCylinders
+	* @return number of cylinders
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
 	*/
 	public int getNumberOfCylinders() {
 		return numberOfCylinders;

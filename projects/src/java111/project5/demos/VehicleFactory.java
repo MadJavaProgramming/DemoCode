@@ -22,6 +22,7 @@ import java.util.*;
 
          //create a vehicle and assign to the first slot in the array
          //listOfVehicles.add(new Vehicle());
+<<<<<<< HEAD
          int numberOfCylinders = (int)(Math.PI * 10);
          Vehicle vehicle1 = new Car("Chevy", "Blazer", 2003, "grey", numberOfCylinders);
          listOfVehicles.add(vehicle1);
@@ -35,6 +36,22 @@ import java.util.*;
          listOfVehicles.add(vehicle2);
          System.out.println("I have " +  Vehicle.numberOfVehicles);
          System.out.println("From vehicle1: I have " +  vehicle1.numberOfVehicles);
+=======
+
+         Vehicle vehicle1 = new Car();
+         vehicle1.setMake("Chevy");
+         vehicle1.setMake("Blazer");
+         vehicle1.setYear(2003);
+         vehicle1.setColor("grey");
+         listOfVehicles.add(vehicle1);
+
+         Vehicle vehicle2 = new Car();
+         vehicle2.setMake("Toyota");
+         vehicle2.setMake("4 Runner");
+         vehicle2.setYear(2012);
+         vehicle2.setColor("black");
+         listOfVehicles.add(vehicle2);
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
 
          //use set methods to assign values...
          // set some details on the first vehicle object

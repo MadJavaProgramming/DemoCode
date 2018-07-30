@@ -11,6 +11,7 @@ package java111.project5.demos;
      protected String model;
      private int year;
      private String color;
+<<<<<<< HEAD
      static int numberOfVehicles;
 
      /** Creates a vehicle
@@ -37,27 +38,44 @@ package java111.project5.demos;
 
      /** sets the vehicle's make
       * @param newMake vehicle's make
+=======
+
+     /** sets the vehicle's make
+      * @param make vehicle's make
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
       */
       public void setMake(String newMake) {
           make = newMake;
       }
 
       /** sets the vehicle's model
+<<<<<<< HEAD
        * @param newModel vehicle's model
+=======
+       * @param model vehicle's model
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
        */
        public void setModel(String newModel) {
            model = newModel;
        }
 
        /** sets the vehicle's color
+<<<<<<< HEAD
         * @param newColor vehicle's color
+=======
+        * @param color vehicle's color
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
         */
         public void setColor(String newColor) {
             color = newColor;
         }
 
         /** sets the vehicle's year
+<<<<<<< HEAD
          * @param newYear vehicle's year
+=======
+         * @param year vehicle's year
+>>>>>>> a9d73eaca3662a82bbd08ffe2441d17ac4836ba1
          */
          public void setYear(int newYear) {
              year = newYear;
