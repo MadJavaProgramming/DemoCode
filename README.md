@@ -1,1 +1,4 @@
-Demo Code For Summer 2018
+Demo Code written in the video demos/lectures. 
+
+Use the branch dropdown, then "tags", to find the version of the demo code you need.
+
