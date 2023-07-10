@@ -1,0 +1,68 @@
+
+Class ID Word Pair Application
+
+WordPair (similar role as dog) - this holds the two words the user entered. Know how to compare those two words for equality. Know how to count the letters in each word. Know how to display the number of letters in each word and know how to display the comparison result.
+
+WordProcessing (user interface - same role as the kennel) - this class will use input helper to get word information from the user. Has a list of WordPairs. Knows how to display all of the word pair info in the list.
+
+The InputHelper class will prompt the user for input and return the entered data to the calling method.
+
+The Launcher class will create an instance of the WordProcessing class and start it running.
+
+******************************
+
+Prep Code! 
+
+WORDPAIR class
+
+DECLARE a String variable to hold the first word: Word1
+DECLARE a String variable to hold the second word: Word2
+
+*****
+
+DECLARE a method named setWord1 that has one parameter. It will not return any value.
+
+DECLARE a method named setWord2 that has one parameter. It will not return any value.
+
+DECLARE a method named compareWords() that has no parameters. It will 
+        return an String that indicates if the two words are the same or not.
+
+DECLARE a method named countLettersWord1() that has no parameters. It will 
+        return an int that is the number of letters in Word1.
+
+DECLARE a method named countLettersWord2() that has no parameters. It will 
+        return an int that is the number of letters in Word2.
+
+DECLARE a method named display() that has no parameters. It will 
+        display the two words, the number of letters in each word, and the compareWords result.
+
+****
+
+METHOD: void setWord1(String word1)
+     assign the value of word1 (passed into this method) to the instance variable word1
+
+METHOD: void setWord2(String word2)
+     assign the value of word2 (passed into this method) to the instance variable word2
+
+
+METHOD: String compareWords()
+    IF Word1 is the same as Word2 
+        RETURN a string such as "Word1 and Word2 are the same" 
+    ELSE 
+        RETURN a string such as "Word1 and Word2 are NOT the same" 
+    END IF
+END METHOD
+
+METHOD: int countLettersWord1()
+    RETURN number (count) of letters in Word1
+END METHOD
+
+METHOD: int countLettersWord2()
+    RETURN number (count) of letters in Word2
+END METHOD
+
+
+METHOD: String display()
+    RETURN "The two words are " word1 " and " word2 ". "Word1 has " + countLettersWord1() " letters ". "Word2 has " + countLettersWord2() " letters ". compareWords()
+END METHOD
+
